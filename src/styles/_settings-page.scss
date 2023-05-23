@@ -1,0 +1,185 @@
+@import 'variables';
+
+.settings-page {
+   background-color: black;
+
+   main{
+      width: 70%;
+      height: 80vh;
+      margin: 0 auto;
+
+      .hiddenContent {
+        opacity: 0;
+        transition: opacity 0.5s ease-out, width 0.5s ease 0.5s, height 0.5s ease 0.5s;
+      }
+
+      .hiddenContent.showIt {
+        opacity: 1;
+      }
+
+
+    .btn{
+      opacity: 0.8;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover{
+        opacity: 1;
+        background-color: $font-gold;
+      }
+
+      &:active{
+        border: 0;
+        outline: 0;
+        transform: scale(1.1);
+      }
+    }
+
+    .container{
+      height: 20vh;
+    }
+
+    .title{
+      font-size:25px;
+      text-align: center;
+   }
+
+   .bigBtn{
+    width: 150px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 25%;
+    background-color: black;
+    font-size: 3vh;
+    color: orangered;
+    text-transform: uppercase;
+    margin: 0 10px;
+   }
+
+   .off,
+   .default-setting{
+    background-color: black;
+   }
+
+   .on,
+   .save-setting{
+    background-color:$font-peach;
+   }
+
+    //Language
+    .radio-container {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      font-weight: 30px;
+      line-height: 26px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: 0.5s;
+      font-size: 18px;
+
+      &:hover {
+      color:$font-gold;
+      }
+
+      input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      }
+
+      .checkmark {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: 5px;
+      width: 5px;
+      border: 2px solid #ffff;
+      border-radius: 50%;
+      }
+
+      .radio-container:hover input ~ .checkmark {
+      border: 2px solid $font-gold;
+      }
+
+      .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+
+      .radio-container input:checked ~ .checkmark:after {
+      display: block;
+      }
+
+      .radio-container .checkmark:after {
+      top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $font-peach;
+      }
+
+   }
+
+   ///Volume
+   .volume{
+     display: none;
+     height: 15vh;
+
+    .false{
+      background-image:url('../../public/images/false.png');
+      height: 4vh;
+    }
+
+    .true{
+      background-image: url('../../public/images/true.png');
+      height: 4vh;
+    }
+
+    .range {
+      background-color: $font-peach;
+      height: 7px;
+      width: 60%;
+      border-radius: 25%;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
+
+      &::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        background: white;
+      }
+    }
+   }
+
+   //Timer button
+
+   .save-default {
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+
+      }
+
+      .vol{
+        display:none;
+      }
+
+
+   }
+ input.sec{
+        background-color: black;
+        border: none;
+        text-align: center;
+        color: white;
+        font-size: 5vh;
+}
+}
