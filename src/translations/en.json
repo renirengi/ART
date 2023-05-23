@@ -1,0 +1,31 @@
+{
+  "title0": "Academisme",
+  "title1": "Realism",
+  "title2": "Dadaism",
+  "title3": "Symbolizm",
+  "title4": "Baroco",
+  "title5": "Rococo",
+  "title6": "Gothic",
+  "title7": "PopArt",
+  "title8": "Сlassicism",
+  "title9": "Сubism",
+  "title10": "Modern",
+  "title11": "ArtDeco",
+  "pictureCardQuestion": "Who is the author of this pictures?",
+  "artistCardQuestion": "Which of the paintings was painted",
+  "homeArt":"Art quiz",
+  "homePic":"Picture -quiz",
+  "languageSetting":"Language",
+  "titleSettings":"Settings",
+  "timeGame": "Time Game",
+  "timeToAnswer": "Time to answer",
+  "save": "Save",
+  "default": "Default",
+  "categories":"Categories",
+  "questions":"Questions",
+  "honor": "Honor",
+  "result": "There is your result"
+
+  
+
+}

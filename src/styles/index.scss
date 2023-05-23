@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Josefine';
+  src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+@import 'variables';
+
+@import 'home-page';
+@import 'settings-page';
+@import 'art-page';
+@import 'honors-page';
+@import 'categories-page';
+
+
+
+body{
+  background-color: black;
+  min-width: 320px;
+  max-height:100vh;
+  z-index:-100;
+  text-align: center;
+  font-size: 4vh;
+  color: white;
+
+
+  .peach_logo,
+  .app_logo{
+     width: 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .app_logo{
+    background-image:$white-app-logo;
+    height:11vh;
+  }
+
+  .peach_logo{
+    background-image: $peach-app-logo;
+    height:11vh;
+  }
+
+
+  main,
+  footer{
+  width:90%;
+  margin: 0 auto;
+}
+
+  header{
+  height:8vh;
+  width:100%;
+  display: flex;
+  margin:0 auto;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+   .logo{
+     margin: 0 3%;
+   }
+}
+
+.logo{
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  opacity: 0.8;
+  outline: 0;
+  transition: 0.3s;
+  width: 6vh;
+
+  &:hover {
+    opacity: 1;
+    -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%)
+      contrast(80%);
+  }
+
+  &:active{
+    border: 0;
+    outline: 0;
+    transform: scale(1.3);
+  }
+
+}
+
+.honor{
+  background-image: url('../../public/images/honor.png');
+}
+
+.home{
+  background-image: url('../../public/images/home_logo.png');
+}
+
+.settings{
+  background-image: url('../../public/images/settings_logo.png');
+}
+
+.categories{
+  background-image: url('../../public/images/categories_logo.png');
+}
+
+.play{
+  background-image: url('../../public/images/play_logo.png');
+}
+
+.back{
+  background-image: url('../../public/images/back_logo.png');
+}
+
+.ok{
+  background-image: url('../../public/images/button-ok.png');
+}
+
+.toRead{
+  background-image: url('../../public/images/toRead.png');
+}
+
+main{
+  height: 80vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+  .school_logo{
+    background-color: transparent;
+    background-image: url("../../public/images/school-logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    opacity: 0.8;
+    outline: 0;
+    transition: 0.3s;
+    width:10vh;
+  }
+
+h2{
+  font-size: 6vh;
+  color: white;
+}
+
+h3{
+  color: $font-peach;
+  letter-spacing: 5px;
+  padding-left:30px;
+  text-transform: uppercase;
+}
+
+footer{
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   height: 8vh;
+   color:white;
+   font-size: 4vh;
+   align-items: center;
+   bottom: 0;
+   left:3%;
+
+}
+
+.hiddenContent {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, width 0.5s ease 0.5s, height 0.5s ease 0.5s;
+}
+
+.hiddenContent.showIt {
+  opacity: 1;
+}
+
+.unpassed,
+.black-white{
+  -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    filter: grayscale(100%);
+}
+
+.color,
+.unpassed.passed{
+  -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    filter: grayscale(0%);
+}
+
+
+
+img{
+  background-size: contain;
+  object-fit: cover;
+}
+}

@@ -1,0 +1,45 @@
+{
+  "ignorePatterns": ["dist", "node_modules"],
+  "rules": {
+    "arrow-body-style": 1,
+    "camelcase": 1,
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }],
+    "import/prefer-default-export": 0,
+    "no-console": 1,
+    "no-else-return": "off",
+    "no-nested-ternary": 1,
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-return-assign": "off",
+    "no-self-compare": 1,
+    "no-template-curly-in-string": 1,
+    "no-underscore-dangle": "off",
+    "no-unused-vars": 1,
+    "no-useless-constructor":"off",
+    "no-var": 1,
+    "prefer-template": "off",
+    "no-use-before-define": "off"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.common.js"
+      }
+    }
+  }
+}
